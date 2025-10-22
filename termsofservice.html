@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service</title>
+  <meta name="description" content="Terms of Service" />
+  <style>
+    :root { color-scheme: light dark; }
+    html, body { height: 100%; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.45; }
+    header, footer { padding: 12px 16px; }
+    header { border-bottom: 1px solid #e5e7eb; }
+    footer { border-top: 1px solid #e5e7eb; }
+    .wrap { height: calc(100vh - 112px); }
+    .wrap > object, .wrap > iframe { width: 100%; height: 100%; border: 0; }
+    a { color: #0366d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#content">Skip to content</a>
+  <header role="banner">
+    <h1 style="margin:0;font-size:1.125rem;">Terms of Service</h1>
+    <p style="margin:.35rem 0 0;">
+      <a href="./termsofservice.pdf" download>Download PDF</a> ·
+      <a href="./termsofservice.pdf">Open PDF directly</a>
+    </p>
+  </header>
+
+  <main id="content" class="wrap" role="main" aria-label="Terms of Service document viewer">
+    <object data="./termsofservice.pdf" type="application/pdf">
+      <p>Your device may not display embedded PDFs. <a href="./termsofservice.pdf">Open the PDF</a> instead.</p>
+    </object>
+  </main>
+
+  <footer role="contentinfo">
+    <small>© <span id="year"></span> propagentic</small>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
